@@ -17,6 +17,10 @@ window.addEventListener('DOMContentLoaded', function () {
         number = "",
         symbol = "";
 
+    generate.addEventListener('click', generatePassword);
+
+    copy.addEventListener('click', copyText);
+
 
     function calcChars() {
         if (lowercaseCheckbox.checked) {
@@ -73,10 +77,4 @@ window.addEventListener('DOMContentLoaded', function () {
             info.classList.toggle('hide');
         }, 1500);
     }
-
-
-    generate.addEventListener('click', generatePassword);
-
-    copy.addEventListener('click', copyText);
-
 });

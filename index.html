@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randon Password</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <h2>Generate Password</h2>
+        <div class="password">
+            <input type="text" placeholder="Password" class="inp-pass" id="password"/>
+        </div>
+        <div class="el">
+            <button title="Copy" class="copy">Copy to clipboard</button>
+            <button title="Generate" class="generate">Generate password</button>
+        </div>
+        <div class="options">
+            <div>
+                <label for="length">Password Length:</label>
+                <select id="length" name="length" class="selector" title="Select the length of password">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            <div>
+                <label for="lowercase">Lowercase Characters:</label>
+                <input type="checkbox" id="lowercase" name="lowercase" checked>
+            </div>
+            <div>
+                <label for="uppercase">Uppercase Characters:</label>
+                <input type="checkbox" id="uppercase" name="uppercase">
+            </div>
+            <div>
+                <label for="numbers">Numbers:</label>
+                <input type="checkbox" id="numbers" name="numbers">
+            </div>
+            <div class="inp-symb">
+                <p>Symbols:</p>
+                <div>
+                    <label for="symbols">Default:</label>
+                    <input type="checkbox" id="symbols" name="symbols">
+                </div>
+                <div>
+                    <label for="user-symbols">Include Symbols:</label>
+                    <input type="text" class="user-symbols" name="user-symbols" id="user-symbols"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info hide">Copied to clipboard!</div>
+    <script src="js/script.js"></script>
+</body>

@@ -1,0 +1,127 @@
+body {
+    /* background: linear-gradient(45deg, rgb(75, 16, 212), rgb(16, 35, 212)); */
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-color: rgb(78, 78, 78);
+    color: rgb(45, 60, 75);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 50px rgba(200, 200, 200, 0.3);
+}
+
+.el {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inp-pass {
+    width: 280px;
+    padding: 9px;
+    color: rgb(45, 60, 75);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid rgb(75, 105, 135);
+    border-radius: 4px;
+}
+
+.inp:focus {
+    outline: none;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    width: 138px;
+    padding: 5px;
+    border: 1px solid rgb(75, 105, 135);
+    border-radius: 4px;
+    transition: 0.2s;
+    box-shadow: 0 2px 5px rgba(200, 200, 200, 0.3);
+    color: rgb(45, 60, 75);
+}
+
+button:hover {
+    background-color: rgb(45, 60, 75);
+    color: #fff;
+}
+
+.options {
+    margin-top: 10px;
+    width: 300px;
+}
+
+.options>div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.inp-symb {
+    display: flex;
+    flex-direction: column;
+}
+
+.inp-symb p,
+.inp-symb div {
+    margin: 0 0 5px 0;
+    /* padding: 0; */
+}
+
+.inp-symb div {
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-symbols {
+    width: 150px;
+    color: rgb(45, 60, 75);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid rgb(75, 105, 135);
+    border-radius: 4px;
+}
+
+.info {
+    margin-top: 40px;
+    color: rgb(125, 202, 0);
+    width: 200px;
+    padding: 12px;
+    opacity: 1;
+    text-align: center;
+    transition: 0.15s;
+    animation: slideIn 1.5s linear forwards;
+}
+
+.hide {
+    opacity: 0;
+}
